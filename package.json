@@ -3,12 +3,14 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "stop": "pkill -f server.js",
+    "r": "npm run stop && npm run dev"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
-  "author": "",
+  "author": "Khawarizmi Jefri",
   "license": "ISC",
   "description": "",
   "dependencies": {

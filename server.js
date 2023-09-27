@@ -8,9 +8,16 @@ app.use(bodyParser.json());
 
 const sayHi = (req, res) => {
   res.send('Hi Khawarizmi!');
+  console.log('hello khawa');
+};
+
+const example = (req, res) => {
+  res.send('example page');
+  console.log('example page');
 };
 
 app.get('/', sayHi);
+app.get('/example', example);
 
 app.post('/add', (req, res) => {
   const { a, b } = req.body;
