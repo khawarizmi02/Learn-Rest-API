@@ -7,13 +7,11 @@ const port = 5000;
 app.use(bodyParser.json());
 
 const sayHi = (req, res) => {
-  res.send('Hi Khawarizmi!');
-  console.log('hello khawa');
+  res.send('Hi Khawarizmi! This is main page');
 };
 
 const example = (req, res) => {
   res.send('example page');
-  console.log('example page');
 };
 
 app.get('/', sayHi);
